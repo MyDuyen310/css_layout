@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>Túi xách Thanh Hằng</title>
+    <script
+      src="https://kit.fontawesome.com/875f0b6aee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <form id="form1" runat="server">
+      <header id="trangchu">
+        <section class="menu-1">
+          <div class="menutop">
+            <div class="logo">
+              <a href="index.aspx">Túi Xách Thanh Hằng</a>
+            </div>
+            <div class="log">
+              <a href="dangnhap.aspx">Đăng nhập</a>/
+              <a href="dangky.aspx">Đăng ký</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="anh">
+          <div class="doianh">
+            <div class="slideshow">
+              <div class="banner">
+                <img src="Anh/index.jpg" />
+              </div>
+              <div class="banner">
+                <img src="Anh/quangcao.jpg" />
+              </div>
+            </div>
+            <div>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("banner");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 4000); // Change image every 4 seconds
+            }
+          </script>
+        </section>
+      </header>
+
+      <section class="menu-2">
+        <div class="menumiddle">
+          <nav>
+            <ul>
+              <li>
+                <i class="fa fa-bars" aria-hidden="true"></i> Danh sách sản phẩm
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <ul>
+                  <li>
+                    <p><a href="sanphamhot.aspx">Sản phẩm nổi bật</a></p>
+                  </li>
+                  <li>
+                    <p><a href="sanphammoi.aspx">Sản phẩm mới</a></p>
+                  </li>
+                  <li>
+                    <p><a href="khuyenmai.aspx">Khuyến mại</a></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p><a href="index.aspx">Trang chủ</a></p>
+              </li>
+              <li>
+                <p><a href="Gioithieu.aspx">Giới thiệu</a></p>
+              </li>
+              <li>
+                <p><a href="Lienhe.aspx">Liên hệ</a></p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="main">
+        <h3>Sản phẩm nổi bật</h3>
+        <h3 id="xemthem">
+          <a href="sanphamhot.aspx"
+            >Xem thêm <i class="fas fa-chevron-right"></i
+          ></a>
+        </h3>
+        <div class="mot">
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/EL78.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi cao cấp EL78</p></div>
+            <div class="gia"><p>190.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/uzzlang1.png" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi cao cấp ulzzang Hàn Quốc</p></div>
+            <div class="gia"><p>300.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/miniFs1005.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi mini Hàn Quốc Fs1005</p></div>
+            <div class="gia"><p>230.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/miniHQ2018.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi mini HQ2018</p></div>
+            <div class="gia"><p>160.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+        </div>
+
+        <h3>Sản phẩm bán chạy</h3>
+        <h3 id="xemthem">
+          <a href="sanphammoi.aspx"
+            >Xem thêm <i class="fas fa-chevron-right"></i
+          ></a>
+        </h3>
+        <div class="hai">
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/miniFs1012.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi mini Fs1012</p></div>
+            <div class="gia"><p>210.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/EL85.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi cao cấp EL85</p></div>
+            <div class="gia"><p>360.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/MivixiTX22.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi đeo chéo TX22</p></div>
+            <div class="gia"><p>400.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/ulzzang2.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi xách tay ulzzang</p></div>
+            <div class="gia"><p>390.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+        </div>
+
+        <h3>Khuyến mại</h3>
+        <h3 id="xemthem">
+          <a href="khuyenmai.aspx"
+            >Xem thêm <i class="fas fa-chevron-right"></i
+          ></a>
+        </h3>
+        <div class="ba">
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/ulzzang3.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi đeo chéo ulzzang3</p></div>
+            <div class="gia1"><p>190.000 đ</p></div>
+            <div class="gia"><p>160.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/AzumiTX03.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi mini azumiTX03</p></div>
+            <div class="gia1"><p>210.000 đ</p></div>
+            <div class="gia"><p>170.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div class="sanpham">
+            <div class="img">
+              <img src="Anh/EL94.jpg" /><a href="chitiet.aspx"></a>
+            </div>
+            <div class="ten"><p>Túi cao cấp EL94</p></div>
+            <div class="gia1"><p>360.000 đ</p></div>
+            <div class="gia"><p>320.000 đ</p></div>
+            <div class="nut">
+              <button><a href="">Mua Ngay</a></button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <footer>
+        <section class="end">
+          <div class="container">
+            <div class="ft1">
+              <div class="one">
+                <h2>Túi xách Thanh Hằng</h2>
+                <p>Chuyên cung cấp tất cả các mặt hàng</p>
+                <p>đảm bảo chất lượng, phong phú đa dạng,</p>
+                <p>đáp ứng nhu cầu của tất cả khách hàng.</p>
+              </div>
+
+              <div class="two">
+                <h2>Menu</h2>
+                <p><a href="index.aspx">Trang chủ</a></p>
+                <p><a href="product.">Sản Phẩm</a></p>
+                <p><a href="Gioithieu.aspx">Giới thiệu</a></p>
+              </div>
+
+              <div class="three">
+                <h2>Liên hệ</h2>
+                <p>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Mỹ Đình 1,
+                  Nam Từ Liêm, Hà Nội
+                </p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 0964077217</p>
+                <p>Zalo: 0964077217</p>
+              </div>
+            </div>
+            <center>
+              <a
+                style="font-size: 16px; color: #353535; text-decoration: none"
+                ;
+                href="#trangchu"
+                >Về đầu trang</a
+              >
+            </center>
+          </div>
+        </section>
+      </footer>
+    </form>
+  </body>
+</html>
