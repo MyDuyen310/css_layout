@@ -14,9 +14,7 @@
       <header id="trangchu">
         <section class="menu-1">
           <div class="menutop">
-            <div class="logo">
-              <a href="index.aspx">Túi Xách Thanh Hằng</a>
-            </div>
+            <div class="logo"></div>
             <div class="log">
               <a href="dangnhap.aspx">Đăng nhập</a>/
               <a href="dangky.aspx">Đăng ký</a>
@@ -39,29 +37,6 @@
               <span class="dot"></span>
             </div>
           </div>
-          <script>
-            var slideIndex = 0;
-            showSlides();
-
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("banner");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {
-                slideIndex = 1;
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-              setTimeout(showSlides, 4000); // Change image every 4 seconds
-            }
-          </script>
         </section>
       </header>
 
@@ -147,7 +122,7 @@
             </div>
           </div>
         </div>
-
+        <h4>Hihiiihihihihui</h4>
         <h3>Sản phẩm bán chạy</h3>
         <h3 id="xemthem">
           <a href="sanphammoi.aspx"
